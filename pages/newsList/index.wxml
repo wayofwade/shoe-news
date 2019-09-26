@@ -1,0 +1,8 @@
+<!--index.wxml-->
+<view class="container">
+    <view>轮播图的页面</view>
+    <view class="news-list">
+        <view class="news-list-one">新闻的列表</view>
+        <view class="news-list-one">新闻的列表</view>
+    </view>
+</view>

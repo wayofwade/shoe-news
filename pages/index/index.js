@@ -7,7 +7,7 @@ Page({
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo') // 请求微信用户的信息
   },
   //事件处理函数
   bindViewTap: function() {
@@ -18,7 +18,7 @@ Page({
   goPersonList: function () { // 转到人物列表页面
     console.log('点击跳转到人物列表页面')
     wx.navigateTo({
-      url: '../personList/personList'
+      url: '/pages/newsList/index'
     })
   },
   onLoad: function () {
@@ -35,6 +35,7 @@ Page({
           userInfo: res.userInfo,
           hasUserInfo: true
         })
+        // 后续还可以存数据库
       }
     } else {
       // 在没有 open-type=getUserInfo 版本的兼容处理

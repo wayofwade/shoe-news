@@ -1,13 +1,34 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
     "pages/logs/logs",
-    "pages/personList/personList"
+    "pages/personList/personList",
+    "pages/newsList/index"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页"
+    }, {
+      "pagePath": "pages/logs/logs",
+      "text": "日志"
+    }, {
+      "pagePath": "pages/newsList/index",
+      "text": "快讯"
+    }]
+  },
+  "sitemapLocation": "sitemap.json",
+  "注释": {
+    "tabBar":"页面的下面的tab，最多出现5个",
+    "resultcode":"200",
+    "查询结果": "",
+    "reason": "查询成功!"
   }
 }
+

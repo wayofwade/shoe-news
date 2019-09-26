@@ -8,6 +8,6 @@
     </block>
   </view>
   <view class="usermotto">
-    <button bindtap="goPersonList" class="user-motto">转到三国人物列表</button>
+    <button bindtap="goPersonList" class="user-motto">转到鞋子页面</button>
   </view>
 </view>
