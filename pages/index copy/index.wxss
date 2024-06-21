@@ -1,0 +1,26 @@
+/**index.wxss**/
+
+
+  .select {
+    margin-top: 30px;
+    width: 180px;
+    border-radius: 80px;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    font-size:26px;
+  }
+  .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    background-color: #fe9000;
+    color: blanchedalmond;
+  }
+  button:hover {
+    cursor: pointer;
+    background-color: #fe9000;
+  }

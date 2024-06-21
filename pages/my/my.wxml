@@ -1,0 +1,5 @@
+<view class="containerMenu">
+    <view class="changeMenuList"  bindtap="onClickMenuHistory">历史菜单</view>
+    <!-- <view class="changeMenuList"  bindtap="changeMenuList">我的收藏</view>
+    <view class="changeMenuList"  bindtap="changeMenuList">精选饭店</view> -->
+</view>

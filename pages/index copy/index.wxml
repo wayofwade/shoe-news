@@ -1,0 +1,12 @@
+<!--index.wxml-->
+<view class="container">
+    <view>
+    <view>就吃这个了：</view>
+    <view class="btn">
+      <view class="select" bindtap="selectMenu">随机选菜</view>
+      <!-- <button class="add" style="margin-left: 20px">新增菜单</button>
+      <button class="del" style="margin-left: 20px">删除菜单</button> -->
+    </view>
+    <view class="menu">{{menu || '请点击上面按钮'}}</view>
+  </view>
+</view>

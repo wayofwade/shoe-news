@@ -17,3 +17,10 @@ const formatNumber = n => {
 module.exports = {
   formatTime: formatTime
 }
+
+
+// 自定义tabbar配置
+        // "custom": true,
+        // "color": "#000000",
+        // "selectedColor": "#000000",
+        // "backgroundColor": "#000000",

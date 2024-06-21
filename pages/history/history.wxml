@@ -1,0 +1,5 @@
+<view class="containerMenu">
+    <view class="changeMenuList" wx:for="{{historyMenuList}}" wx:for-index="idx" wx:for-item="item" wx:key="idx">
+        {{item.time}}:{{item.menuName}}
+    </view>
+</view>

@@ -1,6 +1,4 @@
-
 // wxml中用不到的变量，没有放到data里面
-import {formatTime} from './../../utils/util'
 let prize = '';         // 速度开始变化（变缓）的位置
 let prizeId = '';       // 中奖位置
 const cycle = 50;       // 基本转动次数
@@ -18,37 +16,11 @@ Page({
     activeIndex: -1,
     allMenuList: [ '红烧肉', '麦当劳', 
     '蛋炒饭','炒米粉', '南昌拌粉', '螺蛳粉','火锅', '麻辣香锅','水果沙拉', '粥',
-    '包子', '小馄饨','手抓饼','烧烤','杂粮煎饼','面包','宫保鸡丁', '糖醋里脊', '红烧带鱼', '牛腩煲',
-    '披萨','饺子','杂粮煎饼','食饼筒'],
+    '包子', '小馄饨','手抓饼','烧烤','杂粮煎饼','面包','宫保鸡丁', '糖醋里脊', '红烧带鱼', '牛腩煲'],
     menuList: [ '红烧肉', '麦当劳', 
     '蛋炒饭','炒米粉', '南昌拌粉', '螺蛳粉','火锅', '麻辣香锅'],
-    menu: '',
-    huoguoUrl: '../../images/火锅.png',
-    refreshUrl: '../../images/刷新.png'
+    menu: ''
   },
-  onShareAppMessage() {
-    const currentDate = new Date();
-    const currentHour = currentDate.getHours();
-
-    let timeTitle = '中午吃什么'
-    if (currentHour>= 13) {
-        timeTitle = '晚上吃什么'
-    }
-    if (currentHour>= 21) {
-        timeTitle = '夜宵吃什么'
-    }
-
-    console.log("当前小时：" + currentHour);
-    return {
-    
-        title: timeTitle,
-        
-        path: '/pages/index/index',
-        
-        imageUrl: this.data.huoguoUrl
-    
-    }
-    },
   /**
    * 随机取出几个数据
    */
@@ -103,15 +75,6 @@ Page({
         title: '抽中：' + menuName,
         icon: 'none'
       })
-
-      const historyMenuList = wx.getStorageSync('historyMenuList') || []
-      const menuObj = {
-          time: formatTime(new Date()),
-          menuName
-      }
-      historyMenuList.push(menuObj)
-      wx.setStorageSync('historyMenuList', historyMenuList)
-
       clearTimeout(timer);
       prize = -1;
       times = 0;
@@ -142,20 +105,12 @@ Page({
     }
   },
   /**
-    * 点击我的历史菜单
-  */
+   * 点击我的历史菜单
+   */
   onClickMenuHistory() {
     wx.navigateTo({ url: '/pages/history/history' }) 
   },
-    /**
-    * 点击我的历史菜单
-  */
- onClickHouseRate() {
-    wx.navigateTo({ url: '/pages/houseRate/houseRate' }) 
-  },
 
-
-  
   /**
    * 生命周期函数--监听页面卸载
    */

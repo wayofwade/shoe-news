@@ -1,0 +1,49 @@
+
+<view class="container log-list">
+    <view class="page-section">
+    <view class="weui-cells__title">房贷时间（单位年）</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input value="{{years}}" class="weui-input" auto-focus placeholder="" bindinput="bindReplaceInput"/>
+      </view>
+    </view>
+  </view>
+
+
+  <view class="page-section">
+    <view class="weui-cells__title">利率（例如4.0）</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input  value="{{annualInterestRate}}"  class="weui-input" auto-focus placeholder=""  bindinput="bindReplaceInput1" />
+      </view>
+    </view>
+  </view>
+
+
+
+  <view class="page-section">
+    <view class="weui-cells__title">贷款额度（单位万）</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input  value="{{principal}}"  class="weui-input" auto-focus placeholder="" bindinput="bindReplaceInput2"/>
+      </view>
+    </view>
+  </view>
+
+
+  <view class="onClickMenuHistory"  bindtap="onClickHouseRate">
+        <button class="historyBtn">等额本息计算</button>
+    </view>
+
+    <view class="onClickMenuHistory"  bindtap="onClickHouseRate1">
+        <button class="historyBtn">等额本金计算</button>
+    </view>
+
+    <view class="onClickMenuHistory1">
+        下面为计算结果:
+    </view>
+
+    <view wx:for="{{resultInfo.lists}}">
+    {{item.title}}: {{item.currentMonthBenJin}}
+</view>
+</view>

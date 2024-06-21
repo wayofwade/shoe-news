@@ -1,34 +1,41 @@
 {
-  "pages": [
-    "pages/index/index",
-    "pages/logs/logs",
-    "pages/personList/personList",
-    "pages/newsList/index"
-  ],
-  "window": {
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black"
-  },
-  "tabBar": {
-    "list": [{
-      "pagePath": "pages/index/index",
-      "text": "首页"
-    }, {
-      "pagePath": "pages/logs/logs",
-      "text": "日志"
-    }, {
-      "pagePath": "pages/newsList/index",
-      "text": "快讯"
-    }]
-  },
-  "sitemapLocation": "sitemap.json",
-  "注释": {
-    "tabBar":"页面的下面的tab，最多出现5个",
-    "resultcode":"200",
-    "查询结果": "",
-    "reason": "查询成功!"
-  }
+    "pages": [
+        "pages/index/index",
+        "pages/logs/logs",
+        "pages/my/my",
+        "pages/personList/personList",
+        "pages/newsList/index",
+        "pages/history/history",
+        "pages/houseRate/houseRate",
+        "pages/waterLog/waterLog"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "WeChat",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "随机选菜"
+            },
+            {
+                "pagePath": "pages/logs/logs",
+                "text": "能不能吃"
+            },
+            {
+                "pagePath": "pages/my/my",
+                "text": "我的"
+            }
+        ]
+    },
+    "sitemapLocation": "sitemap.json",
+    "注释": {
+        "tabBar": "页面的下面的tab，最多出现5个",
+        "resultcode": "200",
+        "查询结果": "",
+        "reason": "查询成功!"
+    }
 }
-
