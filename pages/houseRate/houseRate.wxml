@@ -1,49 +1,43 @@
 
 <view class="container log-list">
-    <view class="page-section">
-    <view class="weui-cells__title">房贷时间（单位年）</view>
-    <view class="weui-cells weui-cells_after-title">
-      <view class="weui-cell weui-cell_input">
-        <input value="{{years}}" class="weui-input" auto-focus placeholder="" bindinput="bindReplaceInput"/>
-      </view>
-    </view>
+<view  class="content">
+
+  <view class="center">
+        <view  class="left">贷款额度(万)</view>
+        <input class="my-input"  value="{{principal}}" auto-focus placeholder=""  bindinput="bindReplaceInput2"  placeholder="请输入贷款额度" />   
+  </view>
+
+  <view class="center">
+        <view  class="left">房贷时间(年)</view>
+        <input class="my-input"  value="{{years}}" auto-focus placeholder=""  bindinput="bindReplaceInput"  placeholder="请输入房贷时间" />   
+  </view>
+  
+  <view class="center">
+        <view  class="left">你的利率(%)</view>
+        <input class="my-input"  value="{{annualInterestRate}}" auto-focus placeholder=""  bindinput="bindReplaceInput1"  placeholder="请输入你的利率" />   
   </view>
 
 
-  <view class="page-section">
-    <view class="weui-cells__title">利率（例如4.0）</view>
-    <view class="weui-cells weui-cells_after-title">
-      <view class="weui-cell weui-cell_input">
-        <input  value="{{annualInterestRate}}"  class="weui-input" auto-focus placeholder=""  bindinput="bindReplaceInput1" />
-      </view>
-    </view>
-  </view>
-
-
-
-  <view class="page-section">
-    <view class="weui-cells__title">贷款额度（单位万）</view>
-    <view class="weui-cells weui-cells_after-title">
-      <view class="weui-cell weui-cell_input">
-        <input  value="{{principal}}"  class="weui-input" auto-focus placeholder="" bindinput="bindReplaceInput2"/>
-      </view>
-    </view>
-  </view>
-
-
-  <view class="onClickMenuHistory"  bindtap="onClickHouseRate">
-        <button class="historyBtn">等额本息计算</button>
+<view class="btns" >
+    <view class="onClickMenuHistory"  bindtap="onClickHouseRate">
+        <button class="{{btnIndex === 0 ? 'historyBtnSelect' : 'historyBtn'}}">等额本息</button>
     </view>
 
     <view class="onClickMenuHistory"  bindtap="onClickHouseRate1">
-        <button class="historyBtn">等额本金计算</button>
+        <button class="{{btnIndex === 1 ? 'historyBtnSelect' : 'historyBtn'}}">等额本金</button>
     </view>
+</view>
 
+
+<!-- <scroll-view class="money_list" scroll-y>
     <view class="onClickMenuHistory1">
-        下面为计算结果:
+        计算结果: 月供 月供本金 月供利息
     </view>
 
     <view wx:for="{{resultInfo.lists}}">
-    {{item.title}}: {{item.currentMonthBenJin}}
+    {{item.title}}: {{item.currentMonthTotal}}-- {{item.currentMonthBenJin}}-- {{item.currentMonthLiXi}}
+</view>
+</scroll-view> -->
+
 </view>
 </view>

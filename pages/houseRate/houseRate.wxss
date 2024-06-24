@@ -1,8 +1,65 @@
 .log-list {
   display: flex;
   flex-direction: column;
+  background-color: whitesmoke;
   padding: 40rpx;
+  height: 100vh;
+}
+.content {
+  border-radius: 20rpx;
+    background-color: white;
 }
 .log-item {
   margin: 10rpx;
+}
+
+.center {
+    padding: 30rpx;
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    border-bottom: 1px solid whitesmoke;
+}
+.left {
+    width: 260rpx;
+}
+.my-input {
+    text-align: right;
+}
+.btns {
+    margin-top: 30rpx;
+    display: flex;
+    justify-content: space-around;
+    align-content: center; 
+    padding-bottom: 30rpx;
+}
+.historyBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200rpx;
+    height: 60rpx;
+    font-size: 30rpx;
+    background: white;
+    color: #07c160;
+    border-radius: 30rpx;
+    border: 1px solid #07c160;
+}
+.historyBtnSelect {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200rpx;
+    height: 60rpx;
+    font-size: 30rpx;
+    background: #07c160;
+    color: white;
+    border-radius: 30rpx;
+    border: 1px solid #07c160;
+}
+.money_list {
+    max-height: 500rpx;
 }

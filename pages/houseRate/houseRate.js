@@ -9,6 +9,7 @@ Page({
     annualInterestRate: 3.0,
     resultInfo: {},
     huoguoUrl: '../../images/火锅.png',
+    btnIndex: ''
   },
   onLoad: function () {
     this.setData({
@@ -199,7 +200,17 @@ Page({
     console.log(`每月还款额数组（首月至末月）:`, result);
 
     this.setData({
-        resultInfo: result
+        resultInfo: result,
+        btnIndex: 0
+    })
+    const data = {
+        principal:principal,
+        annualInterestRate:annualInterestRate,
+        years:years,
+        btnIndex: 0
+    }
+    wx.navigateTo({
+      url: `/pages/houseRate/houseRateDetail/houseRateDetail?data=${JSON.stringify(data)}`,
     })
   },
   onClickHouseRate1 () {
@@ -208,22 +219,18 @@ Page({
     console.log(`每月还款额数组（首月至末月）:`, result);
 
     this.setData({
-        resultInfo: result
+        resultInfo: result,
+        btnIndex: 1
+    })
+    const data = {
+        principal:principal,
+        annualInterestRate:annualInterestRate,
+        years:years,
+        btnIndex: 1
+    }
+    wx.navigateTo({
+      url: `/pages/houseRate/houseRateDetail/houseRateDetail?data=${JSON.stringify(data)}`,
     })
   }
-
-
-  
-  // 如果组合贷款 就是分开计算加起来
-  // 使用示例
-  // 使用示例
-//   let principal = 1000000; // 贷款金额100万
-//   let annualInterestRate = 4.0; // 年利率4%
-//   let years = 20; // 贷款期限20年
-//   // 使用示例
-//   let result = calculateEqualPrincipal(principal, annualInterestRate, years);
-//   console.log(`每月还款额数组（首月至末月）:`, result);
-//   let monthlyPayment = calculateEqualInstallment(principal, annualInterestRate, years);
-//   console.log(`每月还款额数组（首月至末月）:`, monthlyPayment);
   
 })

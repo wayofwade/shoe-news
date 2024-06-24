@@ -1,0 +1,70 @@
+/* pages/houseRate/houseRateDetail/houseRateDetail.wxss */
+
+.page {
+    padding-top: 0rpx;
+    padding: 20rpx;
+}
+.titleListTop {
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    width: calc(100vw - 40rpx);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    background-color: whitesmoke;
+    height: 120rpx;
+}
+.titleList {
+    width: calc(100vw - 40rpx);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title1 {
+    font-size: 36rpx;
+    width: 16%;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title {
+    font-size: 36rpx;
+    width: 28%;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title3 {
+    font-size: 32rpx;
+    width: 19%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title4 {
+    font-size: 32rpx;
+    width: 27%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.money_list {
+    padding-top: 120rpx;
+}
+.countFun {
+    padding-left: 30rpx;
+    font-size: 36rpx;
+    font-weight: 600;
+    margin-bottom: 10rpx;
+}

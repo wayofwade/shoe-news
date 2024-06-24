@@ -1,0 +1,20 @@
+<!--pages/houseRate/houseRateDetail/houseRateDetail.wxml-->
+<view class="page">
+    <view class="titleListTop">
+        <text class="title1">期数</text>
+        <text class="title">月供</text>
+        <text class="title">月供本金</text>
+        <text class="title">月供利息</text>
+    </view>
+
+
+    <scroll-view class="money_list" scroll-y>
+        <text class="countFun">{{btnIndex === 0 ? '等额本息' :'等额本金'}}</text>
+    <view wx:for="{{resultInfo.lists}}" class="titleList">
+        <text class="title3">{{item.title}}</text>
+        <text class="title4">{{item.currentMonthTotal}}</text>
+        <text class="title4">{{item.currentMonthBenJin}}</text>
+        <text class="title4">{{item.currentMonthLiXi}}</text>
+    </view>
+    </scroll-view>
+</view>

@@ -2,7 +2,7 @@
     "appid": "wx927d50c3f2ed7528",
     "projectname": "%E4%B8%89%E5%9B%BD%E8%8B%B1%E9%9B%84",
     "compileType": "miniprogram",
-    "libVersion": "2.6.1",
+    "libVersion": "3.4.7",
     "packOptions": {
         "ignore": [],
         "include": []

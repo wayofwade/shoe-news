@@ -7,7 +7,8 @@
         "pages/newsList/index",
         "pages/history/history",
         "pages/houseRate/houseRate",
-        "pages/waterLog/waterLog"
+        "pages/waterLog/waterLog",
+        "pages/houseRate/houseRateDetail/houseRateDetail"
     ],
     "window": {
         "backgroundTextStyle": "light",
@@ -37,5 +38,13 @@
         "resultcode": "200",
         "查询结果": "",
         "reason": "查询成功!"
-    }
+    },
+    "useExtendedLib": {
+        "weui": true
+      },
+      "usingComponents": {
+        "mp-dialog": "weui-miniprogram/dialog/dialog",
+        "mp-cells": "weui-miniprogram/cells/cells",
+        "mp-cell": "weui-miniprogram/cell/cell"
+      }
 }
