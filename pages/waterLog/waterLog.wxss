@@ -6,3 +6,14 @@
 .log-item {
   margin: 10rpx;
 }
+.cav {
+    width: 250px;
+    height: 350px;
+    margin: 0 auto;
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+  .i-shadow {
+    box-shadow: 1px 1px 15px #eeeeee;
+  }
+  

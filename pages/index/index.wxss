@@ -57,7 +57,7 @@
 }
 
 .onClickMenuHistory {
-    margin-top: 100rpx;
+    margin-top: 40rpx;
     width: 100%;
 }
 

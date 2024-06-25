@@ -23,4 +23,7 @@
     <view class="onClickMenuHistory"  bindtap="onClickHouseRate">
         <button class="historyBtn">房贷计算</button>
     </view>
+    <view class="onClickMenuHistory"  bindtap="onClickWaterLog">
+        <button class="historyBtn">加水印</button>
+    </view>
 </view>

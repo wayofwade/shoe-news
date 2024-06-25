@@ -155,6 +155,12 @@ Page({
   },
 
 
+  onClickWaterLog() {
+    wx.navigateTo({ url: '/pages/waterLog/waterLog' }) 
+  },
+
+
+
   
   /**
    * 生命周期函数--监听页面卸载
