@@ -8,7 +8,17 @@
         "pages/history/history",
         "pages/houseRate/houseRate",
         "pages/waterLog/waterLog",
-        "pages/houseRate/houseRateDetail/houseRateDetail"
+        "pages/houseRate/houseRateDetail/houseRateDetail",
+        "pages/life/bmi/bmi",
+        "pages/life/countryFlag/countryFlag",
+        "pages/life/ip_info/index",
+        "pages/life/randomNum/randomNum",
+        "pages/life/screenshotConnect/screenshotConnect",
+        "pages/life/screenshotConnect/showImage",
+        "pages/life/cuttingNine/cuttingNine",
+        "pages/life/randomEat/randomEat"
+        
+        
     ],
     "window": {
         "backgroundTextStyle": "light",

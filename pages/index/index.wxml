@@ -1,29 +1,32 @@
 <view class="containerMenu">
-    <view class="changeMenuList"  bindtap="changeMenuList">
-    换一批菜单
+    <view class="onClickMenuHistory"  bindtap="randomEat">
+        <button class="historyBtn">随机吃饭</button>
     </view>
-    <view class="wrap">
-        <view class="{{activeIndex === 0 ? 'active' : ''}}">{{menuList[0]}}</view>
-        <view class="{{activeIndex === 1 ? 'active' : ''}}">{{menuList[1]}}</view>
-        <view class="{{activeIndex === 2 ? 'active' : ''}}">{{menuList[2]}}</view>
-        <view class="{{activeIndex === 7 ? 'active' : ''}}">{{menuList[7]}}</view>
-        <view bindtap="start" class="start">开始</view>
-        <view class="{{activeIndex === 3 ? 'active' : ''}}">{{menuList[3]}}</view>
-        <view class="{{activeIndex === 6 ? 'active' : ''}}">{{menuList[6]}}</view>
-        <view class="{{activeIndex === 5 ? 'active' : ''}}">{{menuList[5]}}</view>
-        <view class="{{activeIndex === 4 ? 'active' : ''}}">{{menuList[4]}}</view>
-
-
-    </view>
-    <view class="selectRes" wx:if="{{!!menu}}">恭喜您选择了: {{menu}}</view>
-
-    <view class="onClickMenuHistory"  bindtap="onClickMenuHistory">
-        <button class="historyBtn">历史菜单</button>
-    </view>
+    
     <view class="onClickMenuHistory"  bindtap="onClickHouseRate">
         <button class="historyBtn">房贷计算</button>
     </view>
     <view class="onClickMenuHistory"  bindtap="onClickWaterLog">
         <button class="historyBtn">加水印</button>
     </view>
+    <view class="onClickMenuHistory"  bindtap="onClickBMI">
+        <button class="historyBtn">测BMI</button>
+    </view>
+    <view class="onClickMenuHistory"  bindtap="countryFlag">
+        <button class="historyBtn">国旗头像</button>
+    </view>
+    <view class="onClickMenuHistory"  bindtap="ip_info">
+        <button class="historyBtn">IP查询</button>
+    </view>
+    <view class="onClickMenuHistory"  bindtap="randomNum">
+        <button class="historyBtn">随机数字</button>
+    </view>
+    <view class="onClickMenuHistory"  bindtap="screenshotConnect">
+        <button class="historyBtn">图片拼接</button>
+    </view>
+    <view class="onClickMenuHistory"  bindtap="cuttingNine">
+        <button class="historyBtn">九宫格</button>
+    </view>
+
+    
 </view>

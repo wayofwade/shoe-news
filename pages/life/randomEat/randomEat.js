@@ -1,6 +1,6 @@
 
 // wxml中用不到的变量，没有放到data里面
-import {formatTime} from './../../utils/util'
+import {formatTime} from './../../../utils/util'
 let prize = '';         // 速度开始变化（变缓）的位置
 let prizeId = '';       // 中奖位置
 const cycle = 50;       // 基本转动次数
@@ -23,8 +23,8 @@ Page({
     menuList: [ '红烧肉', '麦当劳', 
     '蛋炒饭','炒米粉', '南昌拌粉', '螺蛳粉','火锅', '麻辣香锅'],
     menu: '',
-    huoguoUrl: '../../images/火锅.png',
-    refreshUrl: '../../images/刷新.png'
+    huoguoUrl: '../../../../images/火锅.png',
+    refreshUrl: '../../../images/刷新.png'
   },
   onShareAppMessage() {
     const currentDate = new Date();

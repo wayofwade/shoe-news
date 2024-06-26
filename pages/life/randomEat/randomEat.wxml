@@ -1,0 +1,25 @@
+<view class="containerMenu">
+    <view class="changeMenuList"  bindtap="changeMenuList">
+    换一批菜单
+    </view>
+    <view class="wrap">
+        <view class="{{activeIndex === 0 ? 'active' : ''}}">{{menuList[0]}}</view>
+        <view class="{{activeIndex === 1 ? 'active' : ''}}">{{menuList[1]}}</view>
+        <view class="{{activeIndex === 2 ? 'active' : ''}}">{{menuList[2]}}</view>
+        <view class="{{activeIndex === 7 ? 'active' : ''}}">{{menuList[7]}}</view>
+        <view bindtap="start" class="start">开始</view>
+        <view class="{{activeIndex === 3 ? 'active' : ''}}">{{menuList[3]}}</view>
+        <view class="{{activeIndex === 6 ? 'active' : ''}}">{{menuList[6]}}</view>
+        <view class="{{activeIndex === 5 ? 'active' : ''}}">{{menuList[5]}}</view>
+        <view class="{{activeIndex === 4 ? 'active' : ''}}">{{menuList[4]}}</view>
+
+
+    </view>
+    <view class="selectRes" wx:if="{{!!menu}}">恭喜您选择了: {{menu}}</view>
+
+    <view class="onClickMenuHistory"  bindtap="onClickMenuHistory">
+        <button class="historyBtn">历史菜单</button>
+    </view>
+
+
+</view>
