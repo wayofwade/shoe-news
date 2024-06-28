@@ -1,0 +1,25 @@
+<!--index.wxml-->
+<view class="container">
+
+<image class="bgImage" src="bg.png"></image>
+<view class="content">
+
+
+  <view class="name_view">
+    {{dishName || defaultSoup}}
+  </view>
+
+  <view class="btn_view">
+    <button class="btn1" bindtap="copy">
+      复制文案
+    </button>
+    <button class="btn" bindtap="exec">
+      生成鸡汤
+    </button>
+  </view>
+</view>
+
+<!-- <view style="position: absolute; bottom: 40rpx;width: 96%;">
+  <ad unit-id="{{bannerUnitId}}" ad-intervals="30"></ad>
+</view> -->
+</view>

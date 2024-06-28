@@ -16,9 +16,11 @@
         "pages/life/screenshotConnect/screenshotConnect",
         "pages/life/screenshotConnect/showImage",
         "pages/life/cuttingNine/cuttingNine",
-        "pages/life/randomEat/randomEat"
-        
-        
+        "pages/life/randomEat/randomEat",
+        "pages/life/life_time/life_time",
+        "pages/life/eat/index",
+        "pages/life/eat/edit_eat",
+        "pages/life/chickenSoup/index"
     ],
     "window": {
         "backgroundTextStyle": "light",
@@ -30,11 +32,11 @@
         "list": [
             {
                 "pagePath": "pages/index/index",
-                "text": "随机选菜"
+                "text": "首页"
             },
             {
                 "pagePath": "pages/logs/logs",
-                "text": "能不能吃"
+                "text": "生活"
             },
             {
                 "pagePath": "pages/my/my",

@@ -1,32 +1,19 @@
-<view class="containerMenu">
-    <view class="onClickMenuHistory"  bindtap="randomEat">
-        <button class="historyBtn">随机吃饭</button>
-    </view>
-    
-    <view class="onClickMenuHistory"  bindtap="onClickHouseRate">
-        <button class="historyBtn">房贷计算</button>
-    </view>
-    <view class="onClickMenuHistory"  bindtap="onClickWaterLog">
-        <button class="historyBtn">加水印</button>
-    </view>
-    <view class="onClickMenuHistory"  bindtap="onClickBMI">
-        <button class="historyBtn">测BMI</button>
-    </view>
-    <view class="onClickMenuHistory"  bindtap="countryFlag">
-        <button class="historyBtn">国旗头像</button>
-    </view>
-    <view class="onClickMenuHistory"  bindtap="ip_info">
-        <button class="historyBtn">IP查询</button>
-    </view>
-    <view class="onClickMenuHistory"  bindtap="randomNum">
-        <button class="historyBtn">随机数字</button>
-    </view>
-    <view class="onClickMenuHistory"  bindtap="screenshotConnect">
-        <button class="historyBtn">图片拼接</button>
-    </view>
-    <view class="onClickMenuHistory"  bindtap="cuttingNine">
-        <button class="historyBtn">九宫格</button>
-    </view>
-
-    
-</view>
+<!--pages/home/home/index.wxml-->
+<scroll-view class="container" scroll-y="true">
+  <ad wx:if="{{bannerUnitId}}" unit-id="{{bannerUnitId}}" ad-intervals="30"></ad>
+  <view wx:if="{{!appData.isRelease&&user.extend.topMessage}}" class="top_info">
+    <view style="white-space: pre-wrap;">{{user.extend.topMessage}}</view>
+  </view>
+  <view class="items-list-wrap">
+    <block wx:for="{{classlist}}" wx:for-item="item" wx:key="index">
+      <view class="item-list-wrap" data-id="{{item}}" bind:tap="selectTop">
+        <view class="item_left">
+          <text></text>
+          <text class="item_level">{{item.sort}}</text>
+        </view>
+        <image class="imgs data-v-8d1cd75a" lazyLoad="{{true}}" src="{{item.icon}}"></image>
+        <text class="item_name">{{item.name}}</text>
+      </view>
+    </block>
+  </view>
+</scroll-view>
