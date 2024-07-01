@@ -130,7 +130,6 @@ Page({
   onShareAppMessage: function () {
     return {
        title: '来测测你的BMI叭~',
-       path: '/pages/bmi/bmi',
        success: function (res) {
           console.log('成功进入分享==========', res);
 

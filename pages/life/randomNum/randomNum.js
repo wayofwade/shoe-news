@@ -51,13 +51,11 @@ Page({
   onShareAppMessage: function () {
     return {
       title: "随机数字",
-      path: "/pages/my_module/randomNum/randomNum"
     };
   },
   onShareTimeline: function (t) {
     return {
       title: "随机数字",
-      path: "/pages/my_module/randomNum/randomNum"
     };
   }
 });

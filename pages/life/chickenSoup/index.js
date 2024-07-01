@@ -1,4 +1,5 @@
 // app.js
+import {globalData} from './../../../utils/globalData'
 let jsonData = require('data.js');
 import {soupListStr} from './data'
 Page({
@@ -281,13 +282,13 @@ Page({
   },
   onShareAppMessage: function (e) {
     return {
-      title: "吃什么,不再纠结,快来试试吧！",
+      title: globalData.SHARE_TITLE,
       imageUrl: "share.png"
     };
   },
   onShareTimeline: function () {
     return {
-      title: "今天吃什么,不再纠结,快来试试吧！"
+      title: globalData.SHARE_TITLE
     };
   },
 

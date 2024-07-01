@@ -1,4 +1,5 @@
 // pages/guoqing/guoqing.js
+import {globalData} from './../../../utils/globalData'
 const ctx = wx.createCanvasContext('shareImg');
 const app = getApp();
 Page({
@@ -26,7 +27,7 @@ Page({
 
   onShareAppMessage: function () {
     return {
-      title: '领取你的国庆专属头像',
+      title: globalData.SHARE_TITLE,
       success: function (res) {
       },
       fail: function (res) {

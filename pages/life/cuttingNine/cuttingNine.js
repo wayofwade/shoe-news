@@ -98,7 +98,6 @@ Page({
   onShareAppMessage: function (t) {
     return {
       title: "明星工具箱--九宫格切图",
-      path: "/pages/my_module/cuttingNine/cuttingNine"
     };
   },
   onShareTimeline: function () {},

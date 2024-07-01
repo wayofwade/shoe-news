@@ -40,13 +40,11 @@ Page({
   onShareAppMessage: function () {
     return {
       title: "一生时间",
-      path: "/pages/my_module/life_time/life_time"
     };
   },
   onShareTimeline: function (t) {
     return {
       title: "一生时间",
-      path: "/pages/my_module/life_time/life_time"
     };
   },
   drawGrid: function (t) {

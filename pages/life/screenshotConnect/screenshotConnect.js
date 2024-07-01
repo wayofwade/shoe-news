@@ -1,3 +1,4 @@
+import {globalData} from './../../../utils/globalData'
 Page({
   data: {
     isRelease: false,
@@ -63,10 +64,9 @@ Page({
     });
   },
   onShareAppMessage: function () {
-    // return {
-    //   title: "明星工具箱--图片拼接",
-    //   path: "/pages/my_module/screenshotConnect/screenshotConnect"
-    // };
+    return {
+      title:globalData.SHARE_TITLE,
+    };
   },
   onShareTimeline: function () {},
 });

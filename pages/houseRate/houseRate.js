@@ -45,9 +45,7 @@ Page({
     
         title: timeTitle,
         
-        path: '/pages/houseRate/houseRate',
-        
-        imageUrl: this.data.huoguoUrl
+        path: '/pages/houseRate/houseRate'
     
     }
     },
