@@ -20,7 +20,9 @@
         "pages/life/life_time/life_time",
         "pages/life/eat/index",
         "pages/life/eat/edit_eat",
-        "pages/life/chickenSoup/index"
+        "pages/life/chickenSoup/index",
+        "pages/life/poemDetail/poemDetail",
+        "pages/life/poem/index"
     ],
     "window": {
         "backgroundTextStyle": "light",

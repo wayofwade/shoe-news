@@ -187,6 +187,18 @@ var json = {
         "id": "1567035718526832642",
         "sort": 900,
         "type": "2048"
+      }, {
+        "extend": "N",
+        "isUse": "Y",
+        "path": "/pages/life/poem/index",
+        "des": "唐诗三百首",
+        "icon": "https://mmbiz.qpic.cn/mmbiz_png/ncTiaSqpEq9TOFqbxMkzsYYukItmBrRExKsoKhxOHicbYiaPBibkmmyZ9xLWen02OP9Mc5DtSnFBWQVY4Upy8SDl4g/0?wx_fmt=png",
+        "name": "唐诗三百首",
+        "typeName": "文案",
+        "typeId": 6,
+        "id": "1567035718526832642",
+        "sort": 1900,
+        "type": "2048"
       },]
   }],
   "success": true,
