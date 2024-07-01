@@ -178,7 +178,7 @@ var json = {
     }, {
         "extend": "N",
         "isUse": "Y",
-        "path": "/pages/life/chickenSoup/index",
+        "path": "/tangshi/chickenSoup/index",
         "des": "心灵鸡汤",
         "icon": "https://mmbiz.qpic.cn/mmbiz_png/ncTiaSqpEq9TOFqbxMkzsYYukItmBrRExKsoKhxOHicbYiaPBibkmmyZ9xLWen02OP9Mc5DtSnFBWQVY4Upy8SDl4g/0?wx_fmt=png",
         "name": "心灵鸡汤",
@@ -190,7 +190,7 @@ var json = {
       }, {
         "extend": "N",
         "isUse": "Y",
-        "path": "/pages/life/poem/index",
+        "path": "/tangshi/poem/index",
         "des": "唐诗三百首",
         "icon": "https://mmbiz.qpic.cn/mmbiz_png/ncTiaSqpEq9TOFqbxMkzsYYukItmBrRExKsoKhxOHicbYiaPBibkmmyZ9xLWen02OP9Mc5DtSnFBWQVY4Upy8SDl4g/0?wx_fmt=png",
         "name": "唐诗三百首",
