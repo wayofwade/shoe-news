@@ -83,14 +83,10 @@ Page({
     wx.setClipboardData({
         data: this.data.dishName,
         success (res) {
-          wx.getClipboardData({
-            success (res) {
-                wx.showToast({
-                  title: '复制成功',
-                })
-              console.log(res.data) // data
-            }
-          })
+            wx.showToast({
+                title: '复制成功',
+              })
+            console.log(res.data) // data
         }
       })
       
