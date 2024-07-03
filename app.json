@@ -20,7 +20,13 @@
         "pages/life/life_time/life_time",
         "pages/life/eat/index",
         "pages/life/eat/edit_eat",
-        "pages/life/chickenSoup/index"
+        "pages/life/chickenSoup/index",
+        "pages/record/energy/index",
+        "pages/record/happyNewYear/index",
+        "pages/record/goodComment/index",
+        "pages/record/merry/index",
+        "pages/record/happyBirthay/index"
+
     ],
     "subPackages": [
         {

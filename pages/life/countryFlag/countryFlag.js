@@ -13,7 +13,8 @@ Page({
     hasUserInfo: false,
     list: [
       0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11
-    ]
+    ],
+    huoguoUrl: '../../../images/火锅.png',
   },
   onLoad: function (options) {
     this.setData({
@@ -28,12 +29,11 @@ Page({
   onShareAppMessage: function () {
     return {
       title: globalData.SHARE_TITLE,
-      success: function (res) {
-      },
-      fail: function (res) {
-      }
+      path: '/pages/index/index',
+      imageUrl: this.data.huoguoUrl
     }
   },
+
   onShareTimeline() {},
 
   selectImg: function (e) {
