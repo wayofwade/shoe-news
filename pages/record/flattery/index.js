@@ -6,7 +6,7 @@ Page({
   data: {
     bannerUnitId: getApp().globalData.bannerUnitId,
     btnName: "准备开始",
-    defaultSoup: '点击按钮，生成鸡汤',
+    defaultSoup: '点击按钮，生成文案',
     soupList: [], // 数组
     dishName: "",
     keyIsCustom: "keyIsCustom",
@@ -22,27 +22,6 @@ Page({
     key: "KEY_MyDishListInfo",
     keyIndex: "KEY_EAT_INDEX",
     index: 0,
-    buttons: [{
-      id: 0,
-      name: "吃什么",
-      checked: true
-    }, {
-      id: 1,
-      name: "买啥菜",
-      checked: false
-    }, {
-      id: 2,
-      name: "喝什么",
-      checked: false
-    }, {
-      id: 3,
-      name: "减脂餐",
-      checked: false
-    }, {
-      id: 4,
-      name: "自定义",
-      checked: false
-    }],
     KEY_LISTS_KEYS: []
   },
 
@@ -271,7 +250,7 @@ Page({
   },
   onShareAppMessage: function (e) {
     return {
-      title: '每日正能量，笑对生活',
+      title: '自动生成彩虹屁',
     };
   },
   onShareTimeline: function () {

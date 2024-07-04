@@ -254,6 +254,45 @@ var json = {
         "sort": 234,
         "type": "2048"
       },
+      {
+        "extend": "N",
+        "isUse": "Y",
+        "path": "/pages/record/flattery/index",
+        "des": "彩虹屁",
+        "icon": "https://mmbiz.qpic.cn/mmbiz_png/ncTiaSqpEq9TOFqbxMkzsYYukItmBrRExKsoKhxOHicbYiaPBibkmmyZ9xLWen02OP9Mc5DtSnFBWQVY4Upy8SDl4g/0?wx_fmt=png",
+        "name": "彩虹屁",
+        "typeName": "文案",
+        "typeId": 2112,
+        "id": "223323",
+        "sort": 433,
+        "type": "2048"
+      },
+      {
+        "extend": "N",
+        "isUse": "Y",
+        "path": "/pages/record/money/index",
+        "des": "投资语录",
+        "icon": "https://mmbiz.qpic.cn/mmbiz_png/ncTiaSqpEq9TOFqbxMkzsYYukItmBrRExKsoKhxOHicbYiaPBibkmmyZ9xLWen02OP9Mc5DtSnFBWQVY4Upy8SDl4g/0?wx_fmt=png",
+        "name": "投资语录",
+        "typeName": "文案",
+        "typeId": 23211,
+        "id": "223345",
+        "sort": 2023,
+        "type": "2048"
+      },
+      {
+        "extend": "N",
+        "isUse": "Y",
+        "path": "/pages/record/daxiao/index",
+        "des": "李大霄语录",
+        "icon": "https://mmbiz.qpic.cn/mmbiz_png/ncTiaSqpEq9TOFqbxMkzsYYukItmBrRExKsoKhxOHicbYiaPBibkmmyZ9xLWen02OP9Mc5DtSnFBWQVY4Upy8SDl4g/0?wx_fmt=png",
+        "name": "李大霄语录",
+        "typeName": "文案",
+        "typeId": 322,
+        "id": "2315",
+        "sort": 545,
+        "type": "2048"
+      },
     //   {
     //     "extend": "N",
     //     "isUse": "Y",
