@@ -8,7 +8,7 @@ Page({
     key: "Key_Home_Info_List_NEW",
     bannerUnitId: getApp().globalData.bannerUnitId,
     videoUnitId: getApp().globalData.videoUnitId,
-    title: "主页",
+    title: "常用语录",
     listDataSuccess: false,
     isShowBottomAd: false,
     classlist: [],
