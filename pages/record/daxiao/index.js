@@ -250,13 +250,8 @@ Page({
   },
   onShareAppMessage: function (e) {
     return {
-      title: '每日学投资，巴菲特不过如此',
-    };
-  },
-  onShareTimeline: function () {
-    return {
-      title: globalData.SHARE_TITLE
-    };
+        title: '李大霄语录',
+      };
   },
 
 })

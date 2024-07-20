@@ -248,7 +248,7 @@ Page({
   },
   onShareAppMessage: function (e) {
     return {
-      title: globalData.SHARE_TITLE,
+      title: this.data.title,
       imageUrl: "share.png"
     };
   },

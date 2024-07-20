@@ -250,7 +250,7 @@ Page({
   },
   onShareAppMessage: function (e) {
     return {
-      title: globalData.SHARE_TITLE,
+      title: '自动生成生日祝福',
       imageUrl: "share.png"
     };
   },

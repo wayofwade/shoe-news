@@ -22,7 +22,8 @@ Page({
     key: "KEY_MyDishListInfo",
     keyIndex: "KEY_EAT_INDEX",
     index: 0,
-    KEY_LISTS_KEYS: []
+    KEY_LISTS_KEYS: [],
+    SHARE_TITLE: '自动生成好评模板'
   },
 
   onLoad() {
@@ -250,7 +251,7 @@ Page({
   },
   onShareAppMessage: function (e) {
     return {
-      title: globalData.SHARE_TITLE,
+      title: this.data.SHARE_TITLE,
       imageUrl: "share.png"
     };
   },
