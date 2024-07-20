@@ -28,7 +28,8 @@
         "pages/record/happyBirthay/index",
         "pages/record/flattery/index",
         "pages/record/money/index",
-        "pages/record/daxiao/index"
+        "pages/record/daxiao/index",
+        "pages/pregnant/pregnant"
 
     ],
     "subPackages": [
@@ -48,18 +49,31 @@
         "navigationBarTextStyle": "black"
     },
     "tabBar": {
+        "selectedColor": "#40A9FF",
         "list": [
             {
                 "pagePath": "pages/index/index",
-                "text": "首页"
+                "text": "常用语录",
+                "iconPath": "images/tabs/yulu.png",
+                "selectedIconPath": "images/tabs/yulu_select.png"
             },
             {
                 "pagePath": "pages/logs/logs",
-                "text": "生活"
+                "text": "每日一句",
+                "iconPath": "images/tabs/day.png",
+                "selectedIconPath": "images/tabs/day_select.png"
+            },
+            {
+                "pagePath": "pages/pregnant/pregnant",
+                "text": "育儿",
+                "iconPath": "images/tabs/yuer.png",
+                "selectedIconPath": "images/tabs/yuer_select.png"
             },
             {
                 "pagePath": "pages/my/my",
-                "text": "我的"
+                "text": "我的工具",
+                "iconPath": "images/tabs/tool.png",
+                "selectedIconPath": "images/tabs/tool_select.png"
             }
         ]
     },

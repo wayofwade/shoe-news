@@ -1,0 +1,6 @@
+<view class="containerMenu">
+
+    <view class="onClickMenuHistory"  bindtap="onClickHouseRate">
+        <button class="historyBtn">房贷计算</button>
+    </view>
+</view>
