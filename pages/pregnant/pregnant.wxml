@@ -1,6 +1,13 @@
-<view class="containerMenu">
-
-    <view class="onClickMenuHistory"  bindtap="onClickHouseRate">
-        <button class="historyBtn">房贷计算</button>
-    </view>
+<view class="container">  
+  <view class="info">  
+    <text>今年已过的节假日：</text>  
+    <text>{{passedHolidaysCount}}</text>  
+    <text>个</text>  
+  </view>  
+  <view class="holidays-list">  
+    <block wx:for="{{remainingHolidays}}" wx:key="date">  
+      <text>{{item.name}}（{{item.date}}）：距离还有{{item.remainingDays}}天</text>  
+    </block>  
+  </view>  
+  <button bindtap="copyHolidaysInfo">复制节假日信息</button>  
 </view>

@@ -1,52 +1,15 @@
-.containerMenu {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
-}
-.center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-.changeMenuList {
-    height: 60px;
-    width: 100%;
-    color: blueviolet;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-.wrap {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  
-  .start {
-      background: tomato;
-      color: yellow;
-  }
-  .wrap view {
-    width: 200rpx;
-    height: 200rpx;
-    border: 1rpx solid #ccc;
-    text-align: center;
-    line-height: 200rpx;
-  }
-  
-  .wrap .active {
-    background-color: yellowgreen;
-    color: #fff;
-  }
-  .selectRes {
-      margin-top: 30px;
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      flex-wrap: wrap;
+.poster-container {  
+    display: flex;  
+    flex-direction: column;  
+    align-items: center;  
+    padding: 0px;  
+    box-sizing: border-box;  
+  }  
+    
+  canvas {  
+    /* 这里不需要设置具体的宽高，因为它会在JS中动态确定 */  
+  }  
+    
+  button {  
+    margin-top: 20px;  
   }

@@ -1,6 +1,4 @@
-<view class="containerMenu">
-
-    <view class="onClickMenuHistory"  bindtap="onClickHouseRate">
-        <button class="historyBtn">房贷计算</button>
-    </view>
+<view class="poster-container">  
+  <canvas canvas-id="posterCanvas" style="width: 375px; height: 500px;"></canvas> <!-- 根据实际画布大小调整 -->  
+  <button bindtap="previewPoster">查看海报</button>  
 </view>
